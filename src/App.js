@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
+import NavigationBars from './Component/NavigationBars';
+import FeaturedPost from './Component/FeaturedPost';
+import Footer from './Component/Footer';
+import Buttons from './Component/Buttons';
 
 function App() {
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavigationBars />
+      {/* <CustomButtons type ="button" background = "yellow">Github</CustomButtons> */}
+       
+       <Buttons /> 
+       <FeaturedPost />
+       <Footer />
     </div>
   );
 }
