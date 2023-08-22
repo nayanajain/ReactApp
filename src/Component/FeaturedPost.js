@@ -13,23 +13,18 @@ const Item = styled(Paper)(({ theme }) => ({
 const FeaturedPost = () => {
     
     return (
-        <>
-        <Grid item columnSpacing={{xs:12, sm:6}}>
-         
-
-
-    </Grid>
-  
-
+        <>     
+      <Typography variant="h5" sx={{color: 'blue'}} component="div">
+          Millions of Success Stories
+        </Typography>
     <Grid container spacing={2}>
+      
   <Grid item xs={12} md={4}>
     <Item>
     <Card sx={{maxWidth: {xs:345, md: 500 }}}>
       <CardContent>
         
-        <Typography variant="h5" component="div">
-          Millions of Success Stories
-        </Typography>
+  
         <CardMedia 
         component="img"
         height="500"
@@ -56,9 +51,7 @@ const FeaturedPost = () => {
     <Card sx={{maxWidth: {xs:345, md: 500 }}}>
       <CardContent>
         
-        <Typography variant="h5" component="div">
-          Millions of Success Stories
-        </Typography>
+       
         <CardMedia 
         component="img"
         height="500"
@@ -85,9 +78,7 @@ const FeaturedPost = () => {
     <Card sx={{maxWidth: {xs:345, md: 500 }}}>
       <CardContent>
         
-        <Typography variant="h5" component="div">
-          Millions of Success Stories
-        </Typography>
+       
         <CardMedia 
         component="img"
         height="500"
