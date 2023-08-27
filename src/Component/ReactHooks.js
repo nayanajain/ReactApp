@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 
 const ReactHooks = () => {
     // const [name, setName] = useState('');
@@ -17,6 +17,10 @@ const ReactHooks = () => {
         setSubmitVal(values => ({...values, [uname]: value}));
 
      }
+
+     useEffect(() => {
+        console.log(submitval);
+     },[submitval])
     const handleSubmit=(e)=>{
         e.preventDefault();
         console.log(submitval);
@@ -71,6 +75,7 @@ const ReactHooks = () => {
                     GTU
                 </option>
             </select>
+            
             <h1>{submitval.listSel}</h1>
            <button type="submit">Submit</button>
            

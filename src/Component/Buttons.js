@@ -1,5 +1,7 @@
 import React from "react";
 import { Button, Typography } from "@mui/material";
+import {BrowserRouter, Route, Routes, Link} from "react-router-dom";
+import ReactHooks from "./ReactHooks";
 
 
 const Buttons = () => {
@@ -11,9 +13,14 @@ const Buttons = () => {
             <Button variant="contained" sx={{background: 'orange', textAlign: 'center', marginLeft: '50%' }} >Create now</Button>
        <br/>
        </div>
+       {/* <BrowserRouter>
+       <Routes>
+        <Route path="/reacthook" element={<ReactHooks />} >click here </Route>
+        </Routes>
+        </BrowserRouter> */}
         <Button variant="contained" color= 'success' text="Github" style={{margin: 20, height: 100, width: 200, textAlign: "center"}}>Register</Button>
         <Button variant="contained" color= 'primary' text="Project" style={{ margin: 20, height: 100, width: 200, textAlign: "center"}}>Login</Button>
-         
+       
         </>
     );
 }
