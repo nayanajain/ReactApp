@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, CardContent, Typography, CardActions, Button, CardMedia, Grid } from "@mui/material";
 import Paper from '@mui/material/Paper';
+import CardComponent from "./CardComponent";
 import { styled } from '@mui/material/styles';
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -22,79 +23,21 @@ const FeaturedPost = () => {
         <Grid item xs={12} md={4}>
           <Item>
             <Card sx={{ maxWidth: { xs: 345, md: 500 } }}>
-              <CardContent>
-
-
-                <CardMedia
-                  component="img"
-                  height="500"
-                  image="/static/images/profgirl.png"
-                  alt="logo"
-                />
-                <Typography variant="h6">
-                  ABC QWER
-                </Typography>
-                <Typography variant="body2">
-
-                  This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.
-
-                </Typography>
-              </CardContent>
-              <CardActions>
-                <Button size="small">Read More..</Button>
-              </CardActions>
+            <CardComponent images="/static/images/profgirl.png" alt="girlimg" name="Sample1s"/>
             </Card>
           </Item>
         </Grid>
         <Grid item xs={12} md={4}>
           <Item>
             <Card sx={{ maxWidth: { xs: 345, md: 500 } }}>
-              <CardContent>
-
-
-                <CardMedia
-                  component="img"
-                  height="500"
-                  image="/static/images/profgirl.png"
-                  alt="logo"
-                />
-                <Typography variant="h6">
-                  ABC QWER
-                </Typography>
-                <Typography variant="body2">
-
-                  This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.
-
-                </Typography>
-              </CardContent>
-              <CardActions>
-                <Button size="small">Read More..</Button>
-              </CardActions>
+            <CardComponent images="/static/images/profboy.jpg" alt="boyimg" name="Sample2"/>
             </Card>
           </Item>
         </Grid>
         <Grid item xs={12} md={4}>
           <Item>
             <Card sx={{ maxWidth: { xs: 345, md: 500 } }}>
-              <CardContent>
-                <CardMedia
-                  component="img"
-                  height="500"
-                  image="/static/images/profgirl.png"
-                  alt="logo"
-                />
-                <Typography variant="h6">
-                  ABC QWER
-                </Typography>
-                <Typography variant="body2">
-
-                  This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.
-
-                </Typography>
-              </CardContent>
-              <CardActions>
-                <Button size="small">Read More..</Button>
-              </CardActions>
+            <CardComponent images="/static/images/profboy.jpg" alt="img" name="Sample3"/>
             </Card>
           </Item>
         </Grid>
